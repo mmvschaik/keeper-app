@@ -5,6 +5,7 @@ function Note(props) {
         <div className="note">
             <h2>{props.title}</h2>
             <p>{props.content}</p>
+            <button onClick={() => props.deleteNote(props.id)}>DELETE</button>
         </div>
     )
 }
